@@ -25,6 +25,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { WorkerProfileComponent } from './worker-profile/worker-profile.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import {MatSelectModule} from '@angular/material/select';
     MatMenuModule,
     MatInputModule,
     MatSelectModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: 'homepage', component: HomepageComponent },
       {path: 'login', component: LoginComponent},
