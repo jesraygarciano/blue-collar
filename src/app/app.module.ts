@@ -25,6 +25,9 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { WorkerProfileComponent } from './worker-profile/worker-profile.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -54,6 +57,7 @@ import {MatSelectModule} from '@angular/material/select';
     MatMenuModule,
     MatInputModule,
     MatSelectModule,
+    FormsModule,
     RouterModule.forRoot([
       {path: 'homepage', component: HomepageComponent },
       {path: 'login', component: LoginComponent},
@@ -62,7 +66,9 @@ import {MatSelectModule} from '@angular/material/select';
       {path: 'registration-worker', component: RegistrationWorkerComponent},
       {path: 'user-profile', component: UserProfileComponent},
       {path: 'worker-profile', component: WorkerProfileComponent}
-    ])
+    ]),
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
