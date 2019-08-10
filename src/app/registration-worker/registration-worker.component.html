@@ -1,1 +1,50 @@
-<p>registration-worker works!</p>
+<div class = "container mt-100" >
+        <div class = "row ">
+              <div class = "col-md-2">
+                  
+              </div>
+              <div class = "col-md-8">
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>Worker Registration Form</mat-card-title>
+                        </mat-card-header>
+                        <form>
+                                <mat-form-field class="input-full-width">
+                                                <input matInput placeholder="Email Address">
+                                </mat-form-field>
+                                <mat-form-field class="input-full-width">
+                                                <input matInput placeholder="First Name">
+                                </mat-form-field>
+                                <mat-form-field class="input-full-width">
+                                                <input matInput placeholder="Last Name">
+                                </mat-form-field>
+                                <mat-form-field class="input-full-width">
+                                                <mat-label>Skill Set</mat-label>
+                                                <mat-select multiple>
+                                                <mat-option *ngFor="let skill of skillsList" [value]="skill">{{skill}}</mat-option>
+                                                </mat-select>
+                                </mat-form-field>
+                                <mat-form-field class="input-full-width">
+                                                <input matInput placeholder="Gender">
+                                </mat-form-field>
+                                <mat-form-field class="input-full-width">
+                                                <input matInput placeholder="Address">
+                                </mat-form-field>
+                                <mat-form-field class="input-full-width">
+                                                <input matInput placeholder="City">
+                                </mat-form-field>
+                                <mat-form-field class="input-full-width">
+                                                <input matInput placeholder="Zip Code">
+                                </mat-form-field>
+                                
+                                        <button mat-button color="primary">Register</button>
+                                
+                        </form>
+                    </mat-card>
+              </div>
+              <div class = "col-md-2">
+                  
+              </div>
+        </div>
+    </div>
+
