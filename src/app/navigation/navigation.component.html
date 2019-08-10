@@ -20,15 +20,20 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>blue-collar</span>
+      <span>Blue collar</span>
 
-      <a routerLink="/login" routerLinkActive="active">login</a>
-      <a routerLink="/job" routerLinkActive="active">Job</a>
-      <a routerLink="/registration-user" routerLinkActive="active">Registration user</a>
-      <a routerLink="/registration-worker" routerLinkActive="active">Registration Worker</a>
-      <a routerLink="/schedule" routerLinkActive="active">Schedule</a>
-      <a routerLink="/user-profile" routerLinkActive="active">User Profile</a>
-      <a routerLink="/worker-profile" routerLinkActive="active">Worker Profile</a>
+        <button mat-button routerLink="/login" routerLinkActive="active">Login</button>
+
+
+          <button mat-button routerLink="/job" routerLinkActive="active">Job</button>
+
+          <button mat-button routerLink="/registration-user" routerLinkActive="active">Registration user</button>
+
+          <button mat-button routerLink="/registration-worker" routerLinkActive="active">Registration Worker</button>
+
+          <button mat-button routerLink="/schedule" routerLinkActive="active">Schedule</button>
+          <button mat-button routerLink="/user-profile" routerLinkActive="active">User Profile</button>
+          <button mat-button routerLink="/worker-profile" routerLinkActive="active">Worker Profile</button>
 
 
     </mat-toolbar>
