@@ -1,11 +1,10 @@
-<div class="basic-layout d-flex align-items-center justify-content-center m-0 bg-white overflow-hidden">
-    <!---->
+<div class="d-flex align-items-center justify-content-center m-0 bg-white overflow-hidden"> <!--basic-layout -->
     <div class="fullscreen-video-wrap">
         <video ref="video" src="../assets/blue-collar-vid.mp4" muted class="absolute-center" autoplay="true"
             loop="true"></video>
         <div class="header-overlay"></div>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-5" id="met-front-hero">
 
         <!-- <form>
         <div class="search-box">
@@ -15,11 +14,15 @@
           <input type="text">
         </div>
       </form> -->
+        <div class="front-hero-tit">
+                <h1 class="text-white font-weight-light">Welcome to blue collar</h1>
+                <h5 class="text-white font-weight-light">Super simble job collar service search</h5>
+        </div>
 
         <div id="cover">
             <form method="get" action="">
                 <div class="tb">
-                    <div class="td"><input type="text" placeholder="Search" required></div>
+                    <div class="td"><input type="text" class="font-weight-light" placeholder="Search" required></div>
                     <div class="td" id="s-cover">
                         <button type="submit">
                             <div id="s-circle"></div>
@@ -30,7 +33,26 @@
             </form>
         </div>
         <br>
-        <!-- <div class="title">
+
+        <div class="position-absolute" id="custom-fp-search">
+
+        <mat-card>
+                <mat-card-header>
+                    <mat-card-title>Custom blue collar search</mat-card-title>
+                </mat-card-header>
+                <form>
+                        <mat-form-field class="input-full-width">
+                                        <input matInput placeholder="City">
+                        </mat-form-field>
+                        <mat-form-field class="input-full-width">
+                                        <input matInput placeholder="Zip Code">
+                        </mat-form-field>                        
+                </form>
+        </mat-card>
+
+    </div>
+
+            <!-- <div class="title">
         Also, build your healty lifestyle.
 
       </div> -->
