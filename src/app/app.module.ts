@@ -23,6 +23,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { JobComponent } from './job/job.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { WorkerProfileComponent } from './worker-profile/worker-profile.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,8 @@ import { WorkerProfileComponent } from './worker-profile/worker-profile.componen
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    MatInputModule,
+    MatSelectModule,
     RouterModule.forRoot([
       {path: 'homepage', component: HomepageComponent },
       {path: 'login', component: LoginComponent},
