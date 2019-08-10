@@ -25,6 +25,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { WorkerProfileComponent } from './worker-profile/worker-profile.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import {HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from 'selenium-webdriver/http';
 import { HttpClientModule } from '@angular/common/http';
@@ -57,6 +58,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatMenuModule,
     MatInputModule,
     MatSelectModule,
+    HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
       {path: 'homepage', component: HomepageComponent },
